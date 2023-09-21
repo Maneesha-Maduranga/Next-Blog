@@ -1,12 +1,17 @@
+import Link from 'next/link';
+
 export default function Navbar() {
   return (
-    <div className='text-lg'>
-      <ul>
-        <li>Home</li>
-        <li>Blogs</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
+    <>
+      <nav className='flex justify-between px-4'>
+        <h1>ByteFutures</h1>
+        <ul className='flex gap-4'>
+          <Link href='/'>Home</Link>
+          <Link href='/blogs'>Blogs</Link>
+          <Link href='/about'>About Us</Link>
+          <Link href='/contact'>Contact Us</Link>
+        </ul>
+      </nav>
+    </>
   );
 }
