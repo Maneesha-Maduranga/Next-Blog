@@ -2,6 +2,9 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 
+//components
+import Navbar from './components/Navbar';
+
 const poppins = Poppins({ weight: '400', subsets: ['latin'] });
 
 export const metadata = {
@@ -13,11 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={poppins.className}>
-        <nav>
-          <h1>Blogiees</h1>
-          <Link href='/'>Home</Link>
-          <Link href='/Blogs'>Blogs</Link>
-        </nav>
+        <Navbar />
         {children}
       </body>
     </html>
