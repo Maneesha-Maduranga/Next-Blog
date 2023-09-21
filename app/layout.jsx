@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${poppins.className} flex h-screen flex-col items-center justify-between p-24`}
+        className={`${poppins.className} flex h-screen flex-col  justify-between p-12`}
       >
         <Navbar />
         <main>{children}</main>
