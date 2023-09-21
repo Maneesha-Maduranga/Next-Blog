@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
+        suppressHydrationWarning={true}
         className={`${poppins.className} flex h-screen flex-col  justify-between p-12`}
       >
         <Navbar />
